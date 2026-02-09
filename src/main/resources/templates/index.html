@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Gestión de Residuos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#fff; }
+        header { background:#2c7be5; color:#fff; padding:16px; }
+        main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+        a { color:#2c7be5; text-decoration:none; }
+        ul { line-height: 1.9; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Centro de Gestión de Residuos</h1>
+</header>
+<main>
+    <p>Has iniciado sesión correctamente.</p>
+    <ul>
+        <li><a th:href="@{/camiones}">Camiones</a></li>
+        <li><a th:href="@{/rutas}">Rutas</a></li>
+        <li><a th:href="@{/asignaciones}">Asignaciones</a></li>
+        <li><a th:href="@{/usuarios}">Usuarios (solo ADMIN)</a></li>
+        <li><a th:href="@{/logout}">Cerrar sesión</a></li>
+    </ul>
+</main>
+</body>
+</html>

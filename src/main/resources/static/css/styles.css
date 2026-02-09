@@ -1,0 +1,98 @@
+/* Estilos base compartidos */
+:root{
+  --brand:#2c7be5;
+  --bg:#f5f5f5;
+  --text:#111;
+  --muted:#666;
+  --danger:#c00;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  color: var(--brand);
+  text-decoration: none;
+}
+
+/* Contenedores */
+.container{
+  max-width: 380px;
+  margin: 8vh auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+/* Tipografía */
+h1{
+  font-size: 1.4rem;
+  margin: 0 0 16px;
+}
+
+label{
+  display:block;
+  margin: 12px 0 6px;
+}
+
+/* Formularios */
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(44,123,229,.15);
+}
+
+button{
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover{
+  filter: brightness(0.95);
+}
+
+.msg{
+  margin-top: 10px;
+  color: var(--danger);
+}
+
+/* Página principal */
+header{
+  background: var(--brand);
+  color: #fff;
+  padding: 16px;
+}
+
+main{
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+ul{
+  line-height: 1.9;
+}

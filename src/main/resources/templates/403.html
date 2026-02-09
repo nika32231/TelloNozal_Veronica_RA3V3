@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Acceso denegado</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#fafafa; }
+        .wrap { max-width:720px; margin:10vh auto; text-align:center; }
+        h1 { color:#b00020; }
+        a { color:#2c7be5; text-decoration:none; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>403 - Acceso denegado</h1>
+    <p>No tienes permisos para acceder a este recurso.</p>
+    <p><a th:href="@{/}">Volver al inicio</a> · <a th:href="@{/logout}">Cerrar sesión</a></p>
+    <p style="margin-top:24px"><a th:href="@{/login}">Ir al login</a></p>
+    <div style="margin-top:32px; color:#777">Centro de Gestión de Residuos</div>
+    <link rel="icon" href="data:,">
+</div>
+</body>
+</html>
